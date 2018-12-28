@@ -52,7 +52,7 @@ export class CreateItem extends Component {
 		const res = await fetch(
 			"https://api.cloudinary.com/v1_1/doiqmhyyj/image/upload",
 			{
-				method: POST,
+				method: "POST",
 				body: data
 			}
 		);

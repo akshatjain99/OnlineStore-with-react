@@ -120,3 +120,4 @@ export class UpdateItem extends Component {
 }
 
 export { UPDATE_ITEM_MUTAION };
+export { SINGLE_ITEM_QUERY };
