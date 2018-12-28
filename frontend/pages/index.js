@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import {ItemsAll} from '../components/ItemsAll';
+
 
 const home = (props) =>(
 	<div>
-		<p>Hey</p>
+		<ItemsAll />
 	</div>
 );
 
