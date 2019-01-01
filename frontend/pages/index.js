@@ -1,11 +1,15 @@
-import Link from 'next/link';
-import {ItemsAll} from '../components/ItemsAll';
+import Link from "next/link";
+import { ItemsAll } from "../components/ItemsAll";
+import React, { Component } from "react";
 
-
-const home = (props) =>(
-	<div>
-		<ItemsAll />
-	</div>
-);
+class home extends Component {
+	render() {
+		return (
+			<div>
+				<ItemsAll page={parseFloat(this.props.query.page) || 1} />
+			</div>
+		);
+	}
+}
 
 export default home;
